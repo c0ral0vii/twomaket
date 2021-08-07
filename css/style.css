@@ -176,21 +176,22 @@ body {
   line-height: 43px;
   font-weight: 400;
   color: #333333;
-  margin: 140px auto 28px 86px;
+  margin: 140px 100px 28px 88px;
 }
 .catchy-title .catchy-title-text p {
+  width: 400px;
   font-family: Georgia;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #999999;
-  margin: 0 100px 18px 86px;
+  margin: 0 100px 18px 88px;
 }
 .catchy-title .catchy-title-text button {
   width: 140px;
   height: 31px;
   background-color: #55415f;
-  margin: 0 auto 0 86px;
+  margin: 0 100px auto 88px;
   text-decoration: none;
   font-family: Georgia;
   font-size: 16px;
@@ -202,20 +203,22 @@ body {
   color: #ffffff;
 }
 
-.imgs-p img {
+.imgs img {
   position: relative;
+  max-width: 500px;
 }
 
-.img, .imgs-p {
-  height: 340px;
+.imgs {
+  max-width: 450px;
+  max-height: 340px;
   margin: 20px 0 0 0;
 }
 
 .out-img-pc {
-  bottom: 270px;
+  bottom: 271px;
   left: 40px;
-  width: 448px;
-  height: 250px;
+  width: 450px;
+  height: 252px;
 }
 
 .bck-img-pc {
@@ -223,20 +226,35 @@ body {
 }
 
 .base-img-pc {
-  top: 42px;
-  right: 264px;
+  bottom: 223px;
+  left: 190px;
 }
 
 .bottom-img-pc {
-  bottom: 250px;
+  bottom: 320px;
   left: 20px;
 }
 
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1200px) {
   .bottom-img-pc {
     bottom: 310px;
   }
 }
+@media screen and (min-width: 1716px) {
+  .out-img-pc {
+    bottom: 271px;
+    height: 252px;
+    width: 450px;
+  }
+
+  .bottom-img-pc {
+    bottom: 320px;
+  }
+}
+.container {
+  max-width: 1920px;
+}
+
 .slick-list {
   overflow: hidden;
 }
@@ -392,7 +410,10 @@ footer {
   margin: 0 0 0 24px;
 }
 .top-footer .footer-item-link .first {
-  margin: 32px 0 0 0;
+  margin: 30px 0 0 0;
+}
+.top-footer .footer-item-link a {
+  color: #9f80a9;
 }
 .top-footer .footer-item-link li {
   color: #9f80a9;
@@ -403,7 +424,7 @@ footer {
   margin: 0 11px 0 0;
   content: "»";
 }
-.top-footer .footer-item .first {
+.top-footer .footer-item .first-i {
   margin: 8px 0 14px 0;
 }
 .top-footer .footer-item p:last-child {
